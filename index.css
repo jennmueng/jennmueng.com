@@ -5,10 +5,9 @@ body {
     align-items: flex-start;
     margin: none;
     padding: 0 40vw 0 8vw;
-    color: #363B48;
+    color: #363b48;
     font-family: objektiv-mk2, sans-serif;
 }
-
 
 .name {
     font-weight: 800;
@@ -19,25 +18,24 @@ body {
 }
 
 .lastName {
-    opacity: .6;
+    opacity: 0.6;
 }
 
 a {
     font-weight: 700;
     font-size: 16pt;
-    color: #3830E7;
+    color: #3830e7;
     letter-spacing: 0.34pt;
     text-decoration: none;
-    transition: opacity .18s ease-out;
-    
+    transition: opacity 0.18s ease-out;
 }
 
 a:hover {
-    opacity: .6;
+    opacity: 0.6;
 }
 
 a:active {
-    opacity: .3;
+    opacity: 0.3;
 }
 
 h3 {
@@ -72,6 +70,19 @@ li {
     display: inline-flex;
 }
 
+.emailContainer {
+    margin-top: 18pt;
+    background-color: #f1f2f3;
+    padding: 8pt 24pt;
+    border-radius: 4pt;
+}
+
+.emailText {
+    cursor: pointer;
+    font-size: 16pt;
+    color: #3830e7;
+}
+
 @media (max-width: 640px) {
     body {
         padding: 0 20pt;
@@ -89,6 +100,17 @@ li {
         font-size: 3.6vw;
     }
     ul {
+        width: 100%;
+    }
+    .emailContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 8pt 0pt;
+    }
+    .emailText {
+        text-align: center;
         width: 100%;
     }
 }
