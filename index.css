@@ -4,9 +4,31 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin: none;
-    padding: 0 40vw 0 8vw;
     color: #363b48;
+    box-sizing: border-box;
+    padding: none;
     font-family: objektiv-mk2, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 8vw 0 8vw;
+    margin: none;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    margin-right: 40pt;
+}
+
+.photo {
+    width: 33vw;
+    margin-bottom: 20pt;
 }
 
 .name {
@@ -23,7 +45,7 @@ body {
 
 a {
     font-weight: 700;
-    font-size: 16pt;
+    font-size: 14pt;
     color: #3830e7;
     letter-spacing: 0.34pt;
     text-decoration: none;
@@ -43,6 +65,15 @@ h3 {
     font-size: 16pt;
     letter-spacing: 0.34pt;
     margin-bottom: 0;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 14pt;
+    letter-spacing: 0.34pt;
+    margin-bottom: 0;
+    margin-top: 0;
+    opacity: .7;
 }
 
 p {
@@ -75,32 +106,35 @@ li {
     background-color: #f1f2f3;
     padding: 8pt 24pt;
     border-radius: 4pt;
+    display: inline-block;
 }
 
 .emailText {
     cursor: pointer;
-    font-size: 16pt;
     color: #3830e7;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 840px) {
     body {
-        padding: 0 20pt;
+        padding: 20pt 20pt 40pt 20pt;
+        box-sizing: content-box;
     }
-    .name {
-        font-size: 8vw;
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: auto;
+        
     }
-    h3 {
-        font-size: 4.4vw;
+    .left {
+        margin-right: 0;
+        height: auto;
     }
-    a {
-        font-size: 4.4vw;
-    }
-    p {
-        font-size: 3.6vw;
-    }
-    ul {
-        width: 100%;
+    .photo {
+        width: 60%;
+        height: auto;
+        object-fit: contain;
     }
     .emailContainer {
         display: flex;
@@ -113,4 +147,34 @@ li {
         text-align: center;
         width: 100%;
     }
+    .hero {
+        margin-bottom: 6vh;
+    }
+}
+
+@media (max-width: 640px) {
+    .photo {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .name {
+        font-size: 8vw;
+    }
+    h3 {
+        font-size: 4.6vw;
+    }
+    h4 {
+        font-size: 4.2vw;
+    }
+    a {
+        font-size: 4.0vw;
+    }
+    p {
+        font-size: 3.6vw;
+    }
+    ul {
+        width: 100%;
+    }
+    
 }
