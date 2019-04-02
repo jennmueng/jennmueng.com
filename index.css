@@ -18,8 +18,12 @@ body {
     margin: none;
     box-sizing: border-box;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+}
+
+.hero {
+    margin-bottom: 2vh;
 }
 
 .left {
@@ -125,7 +129,6 @@ li {
         align-items: center;
         padding: 0;
         height: auto;
-        
     }
     .left {
         margin-right: 0;
