@@ -277,7 +277,7 @@
                     "totalSessions": 932873,
                     "totalUsers": 12,
                     "hasHealthData": true,
-                    "crashFreeSessions": 100,
+                    "crashFreeSessions": 100.0,
                     "sessionsErrored": 28,
                     "stats": {
                         "24h": [
@@ -308,7 +308,7 @@
                         ]
                     },
                     "totalSessions24h": null,
-                    "crashFreeUsers": 100,
+                    "crashFreeUsers": 100.0,
                     "durationP90": null,
                     "adoption": null,
                     "sessionsCrashed": 0
