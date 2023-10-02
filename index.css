@@ -72,6 +72,25 @@ body {
     font-weight: 500;
 }
 
+.paper-title {
+    color: #363b48;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.mt {
+    margin-top: 1em;
+}
+
+.paper-names {
+    font-style: italic;
+    margin: 0.667em 0;
+}
+
+.inline-a {
+    font-size: 1em;
+}
+
 a {
     font-weight: 700;
     font-size: 12pt;
