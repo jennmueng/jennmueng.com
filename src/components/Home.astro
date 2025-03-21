@@ -1,0 +1,52 @@
+---
+import Section from './Section.astro';
+import SocialRow from './SocialRow.astro';
+import { Mail } from 'lucide-astro'
+---
+
+<div id="container" class="bg-stone-900 text-stone-300 min-h-screen flex items-center justify-center">
+	<main class="max-w-lg mx-auto px-8 lg:px-0 py-12">
+		<section id="intro" class="flex flex-col gap-4">
+			<h1 class="text-3xl font-bold text-white">
+				Jenn Mueng
+			</h1>
+			<SocialRow />
+			<h2 class="text-xl font-medium">
+				Senior Machine Learning Engineer @ Sentry
+			</h2>
+			<p>
+				I take AI products from 0 to scale.
+			</p>
+			<p>
+				I'm currently using AI to make it much more enjoyable to work with code. At Sentry, I built <a href="https://docs.sentry.io/product/issues/issue-details/sentry-ai/" class="text-blue-500 hover:underline">Autofix</a> from scratch, which discovers the root cause of bugs and fixes them for you.
+			</p>
+			<p>
+				Before this, I took <a href="https://www.usertesting.com/blog/ai-insight-summary" class="text-blue-500 hover:underline">UserTesting's AI features</a> from 0 to 1, <a href="https://dl.acm.org/doi/10.1145/3678957.3685701" class="text-blue-500 hover:underline">published a paper on them</a>, and got my <a href="https://tourapp.co/" class="text-blue-500 hover:underline">first startup acquired</a>.
+			</p>
+			<p>
+				For the rest, you can go check out my <a href="https://www.linkedin.com/in/jennarongm/" class="text-blue-500 hover:underline">Linkedin</a>.
+			</p>
+			<p>
+				Right now I'm back and forth between SF and Bangkok.
+			</p>
+			<Section>
+				<h3 class="text-lg font-medium">
+					Chat with me about:
+				</h3>
+				<ul class="list-disc list-outside pl-4">
+					<li>Everything in the world that we can automate & optimize</li>
+					<li>Making AI reliable</li>
+					<li>Crazy ideas in your head</li>
+					<li>If you need AI expertise (open to consulting!)</li>
+					<li>Cars.</li>
+				</ul>
+			</Section>
+			<div class="flex gap-1 items-center">
+				<Mail class="size-4 stroke-[1.5px] mt-[2px] text-stone-500" />
+				<a href="mailto:me@jennmueng.com" class="text-blue-500 hover:underline">
+					me@jennmueng.com
+				</a>
+			</div>
+		</section>
+	</main>
+</div>

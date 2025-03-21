@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Open Sans Variable', 'sans-serif';
+
+   
+}
+
+body {
+    font-size: 0.9em;
+    letter-spacing: 0.008em;
+}
